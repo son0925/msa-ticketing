@@ -1,0 +1,27 @@
+plugins {
+	id 'org.springframework.boot' version '3.4.2'
+	id 'io.spring.dependency-management'
+	id 'java'
+}
+
+group = 'com.ticketing'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+dependencies {
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+}
+
+test {
+	useJUnitPlatform()
+}
