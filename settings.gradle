@@ -1,7 +1,0 @@
-rootProject.name = 'stage_pass'
-
-include("common")
-include("concert-service")
-include("gateway-service")
-include("ticket-service")
-include("user-service")
